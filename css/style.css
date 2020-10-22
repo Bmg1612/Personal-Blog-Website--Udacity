@@ -17,12 +17,10 @@ html {
     "hd"
     "main"
     "ft";
-  border: 2px solid green;
 }
 nav {
   background: #11161a;
   padding: 0 15px;
-  border: 2px solid red;
 }
 
 nav > ul > li > a {
@@ -62,6 +60,7 @@ nav > ul > li > a:hover {
 
 main {
   grid-area: main;
+  margin: 10px 0;
 }
 
 .article-card {
@@ -70,11 +69,11 @@ main {
   transition: 0.3s;
   background-color: #f3f1f1;
   text-align: center;
-  border: 2px solid blue;
 }
 
 .blog-img {
   width: 100%;
+  border-radius: 25px;
 }
 
 article > a {
@@ -82,19 +81,29 @@ article > a {
 }
 
 .post-title {
-  /* color: #242a2f; */
   color: #96a0aa;
 }
 
 .blog-txt {
-  /* color: #96a0aa; */
   color: #242a2f;
 }
 
 footer {
   grid-area: ft;
-  border: 2px solid orange;
+  background-color: #2e3d49;
+  text-align: center;
+  color: #ffffff;
+  letter-spacing: 2px;
 }
+
+footer > h2 {
+  text-align: center;
+}
+
+.label-email {
+  letter-spacing: 0px;
+}
+
 /* Tablet layout */
 @media (min-width: 600px) and (max-width: 900px) {
   .menu {
