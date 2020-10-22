@@ -2,9 +2,12 @@ html {
   font-family: "Indie Flower", cursive;
   font-size: 16px;
   box-sizing: border-box;
+  background-color: #1f2932;
+}
+
+body {
   padding: 0px;
   margin: 0px;
-  background-color: #1f2932;
 }
 
 /* Mobile layout */
@@ -17,10 +20,12 @@ html {
     "hd"
     "main"
     "ft";
+  gap: 30px;
 }
 nav {
   background: #11161a;
   padding: 0 15px;
+  grid-area: hd;
 }
 
 nav > ul > li > a {
@@ -38,7 +43,6 @@ nav > ul > li > a:hover {
 
 .menu {
   list-style-type: none;
-  grid-area: hd;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -60,14 +64,17 @@ nav > ul > li > a:hover {
 
 main {
   grid-area: main;
-  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 0 20px;
 }
 
 .article-card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 25px;
   transition: 0.3s;
-  background-color: #f3f1f1;
+  background-color: #c8cdd2;
   text-align: center;
 }
 
@@ -81,7 +88,7 @@ article > a {
 }
 
 .post-title {
-  color: #96a0aa;
+  color: #657482;
 }
 
 .blog-txt {
@@ -106,27 +113,69 @@ footer > h2 {
 
 /* Tablet layout */
 @media (min-width: 600px) and (max-width: 900px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: min-content;
+    grid-template-areas:
+      "hd hd"
+      "main main"
+      "ft ft";
+    /* border: 2px solid yellow; */
+  }
   .menu {
     justify-content: center;
   }
   .logo {
     flex: 1;
   }
+
+  main {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .article-card {
+    width: 45%;
+  }
 }
 
 /* Desktop layout */
 @media (min-width: 901px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: min-content;
+    grid-template-areas:
+      "hd hd hd"
+      "main main main"
+      "ft ft ft";
+  }
+
   .menu {
     flex-direction: row;
     align-items: flex-start;
     flex-wrap: nowrap;
     padding: 10px;
-    /* border: 2px solid yellow; */
+    width: 100%;
   }
 
   .item {
     position: relative;
     display: block;
     width: auto;
+  }
+
+  main {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .article-card {
+    width: 30%;
   }
 }
