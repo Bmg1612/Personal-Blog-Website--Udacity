@@ -108,3 +108,100 @@ article > a {
 .about-link {
   color: #53cbed;
 }
+
+/* Blog post page */
+.grid-container-post {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: min-content;
+  grid-template-areas:
+    "hd   hd   hd"
+    "main main main"
+    "ft   ft   ft";
+  gap: 20px;
+}
+
+.nested-grid {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: min-content;
+  grid-template-areas: "article aside";
+  gap: 5px;
+  color: #ffffff;
+}
+
+.blog-article {
+  grid-area: article;
+  height: 100%;
+  width: 100%;
+}
+
+.heading {
+  text-align: center;
+  font-size: 3rem;
+  text-decoration: underline;
+  color: #dcbff3;
+}
+
+.month-list {
+  list-style-type: upper-roman;
+}
+
+.month {
+  color: #ffffff;
+}
+
+.author-post {
+  padding: 0px;
+  border-bottom: 2px dotted #ffffff;
+  margin-left: 5px;
+}
+
+.img {
+  width: 10%;
+  border-radius: 50%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.author-name {
+  margin: 0px;
+  padding: 0px;
+  color: #b4b9bd;
+}
+
+.author-description {
+  margin: 0px;
+  padding: 0px;
+  padding-bottom: 10px;
+  color: #b4b9bd;
+}
+
+.blog-aside {
+  grid-area: aside;
+  height: 100%;
+  width: 100%;
+  border-left: 2px inset #ffffff;
+}
+
+.social-media {
+  border-top: 2px inset #ffffff;
+  border-bottom: 2px inset #ffffff;
+}
+
+.little-heading {
+  text-align: center;
+  color: #dcbff3;
+}
+
+.social-list {
+  list-style-type: square;
+}
+
+.social-items {
+  text-decoration: none;
+  color: #ffffff;
+}
