@@ -104,3 +104,7 @@ article > a {
 .about-ls {
   display: inline-block;
 }
+
+.about-link {
+  color: #53cbed;
+}

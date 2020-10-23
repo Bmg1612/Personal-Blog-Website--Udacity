@@ -28,6 +28,10 @@
     width: auto;
   }
 
+  .home-link {
+    right: 5%;
+  }
+
   main {
     grid-area: main;
     display: flex;
