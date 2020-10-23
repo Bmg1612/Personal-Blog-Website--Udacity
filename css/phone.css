@@ -3,7 +3,7 @@
   @media (max-width: 320px) {
     .label-email {
       /* Hiding the label because it was not fitting is small mobile screen */
-      /* Hiding this way for accessibility reasons (screen reader) */  
+      /* Hiding this way for accessibility reasons (screen reader) */
       border: 0;
       clip-path: rect(1px, 1px, 1px, 1px);
       height: 1px;
@@ -33,12 +33,52 @@
     justify-content: space-between;
     align-items: center;
   }
-
+  /* Home page*/
   main {
     grid-area: main;
     display: flex;
     flex-direction: column;
     gap: 20px;
     margin: 0 20px;
+  }
+
+  /* Blog post page */
+  .grid-container-post {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content;
+    grid-template-areas:
+      "hd"
+      "main"
+      "main"
+      "main"
+      "ft";
+    gap: 20px;
+  }
+  .nested-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content;
+    grid-template-areas:
+      "aside"
+      "article"
+      "article"
+      "article";
+    gap: 5px;
+    color: #ffffff;
+  }
+
+  .blog-aside {
+    grid-area: aside;
+    border: 0px;
+  }
+
+  .blog-article {
+    grid-area: article;
+    width: 100%;
+    text-align: justify;
   }
 }

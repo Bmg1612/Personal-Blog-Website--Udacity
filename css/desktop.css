@@ -45,4 +45,39 @@
   .article-card {
     width: 30%;
   }
+  .grid-container-post {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: min-content;
+    grid-template-areas:
+      "hd   hd   hd"
+      "main main main"
+      "ft   ft   ft";
+    gap: 20px;
+  }
+
+  .nested-grid {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: min-content;
+    grid-template-areas: "article aside";
+    gap: 5px;
+    color: #ffffff;
+  }
+
+  .blog-article {
+    grid-area: article;
+    height: 100%;
+    width: 100%;
+  }
+
+  .blog-aside {
+    grid-area: aside;
+    height: 100%;
+    width: 100%;
+    border-left: 2px inset #ffffff;
+  }
 }

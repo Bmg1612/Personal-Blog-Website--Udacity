@@ -33,4 +33,44 @@
   .article-card {
     width: 45%;
   }
+
+  /* Blog post page */
+  .grid-container-post {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content;
+    grid-template-areas:
+      "hd"
+      "main"
+      "main"
+      "main"
+      "ft";
+    gap: 20px;
+  }
+  .nested-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content;
+    grid-template-areas:
+      "aside"
+      "article"
+      "article"
+      "article";
+    gap: 5px;
+    color: #ffffff;
+  }
+
+  .blog-aside {
+    grid-area: aside;
+    border: 0px;
+  }
+
+  .blog-article {
+    grid-area: article;
+    width: 100%;
+    text-align: justify;
+  }
 }
