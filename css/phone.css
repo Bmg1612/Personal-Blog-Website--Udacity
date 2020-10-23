@@ -1,5 +1,19 @@
 /* Mobile layout */
 @media (max-width: 599px) {
+  @media (max-width: 320px) {
+    .label-email {
+      /* Hiding the label because it was not fitting is small mobile screen */
+      /* Hiding this way for accessibility reasons (screen reader) */  
+      border: 0;
+      clip-path: rect(1px, 1px, 1px, 1px);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+  }
   .grid-container {
     display: grid;
     grid-template-columns: 1fr;
