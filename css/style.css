@@ -1,7 +1,9 @@
+/* Importing responsive layouts */
 @import "./phone.css" (max-width: 599px);
 @import "./tablet.css" (min-width: 600px) and (max-width: 900px);
 @import "./desktop.css" (min-width: 901px);
 
+/* Universal code */
 html {
   font-family: "Indie Flower", cursive;
   font-size: 16px;
@@ -45,6 +47,23 @@ nav > ul > li > a:hover {
   padding: 0px 10px;
 }
 
+footer {
+  grid-area: ft;
+  background-color: #2e3d49;
+  text-align: center;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+
+footer > h2 {
+  text-align: center;
+}
+
+.label-email {
+  letter-spacing: 0px;
+}
+
+/* Home page */
 .article-card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 25px;
@@ -70,18 +89,18 @@ article > a {
   color: #242a2f;
 }
 
-footer {
-  grid-area: ft;
-  background-color: #2e3d49;
+/* 'About' page */
+.about-main {
+  display: inline-block;
+  color: #b4b9bd;
+  margin: 0 10px;
   text-align: center;
+}
+
+.hdn-center {
   color: #ffffff;
-  letter-spacing: 2px;
 }
 
-footer > h2 {
-  text-align: center;
-}
-
-.label-email {
-  letter-spacing: 0px;
+.about-ls {
+  display: inline-block;
 }
