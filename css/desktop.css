@@ -1,0 +1,44 @@
+/* Desktop layout */
+@media (min-width: 901px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: min-content;
+    grid-template-areas:
+      "hd hd hd"
+      "main main main"
+      "ft ft ft";
+    gap: 30px;
+  }
+
+  .menu {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .item {
+    position: relative;
+    display: block;
+    width: auto;
+  }
+
+  main {
+    grid-area: main;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .article-card {
+    width: 30%;
+  }
+}
