@@ -7,9 +7,9 @@
     grid-auto-rows: min-content;
     grid-template-areas:
       "hd hd hd"
+      "article article article"
       "main main main"
       "ft ft ft";
-    gap: 30px;
   }
 
   .menu {
@@ -33,7 +33,31 @@
     right: 5%;
   }
 
-  main {
+  .featured-post {
+    grid-area: article;
+    padding: 0 20px;
+    border-bottom: 2px dotted #ffffff;
+    font-size: 2.5rem;
+    background-image: url("../img/feat-post-img.png");
+    background-size: contain;
+  }
+
+  .feat-post-link {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  .hd-feat-post {
+    color: #dcbff3;
+    padding-top: 0px;
+  }
+
+  .txt-feat-post {
+    font-size: 1.5rem;
+    padding-top: 0px;
+  }
+
+  .main-home {
     grid-area: main;
     display: flex;
     flex-direction: row;
@@ -41,6 +65,8 @@
     gap: 20px;
     align-items: center;
     justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 
   .article-card {
