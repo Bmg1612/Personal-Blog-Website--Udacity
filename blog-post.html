@@ -8,20 +8,21 @@
         <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
     </head>
     <body>
+        <a href="#main-content" class="skip-link">Skip to main content</a>
         <!-- Grid -->
         <div class="grid-container-post">
             <!--Flexbox menu-->
-            <nav>
+            <nav class="nav-top">
                 <ul class="menu">
                     <li class="logo">Blog Template</li>
-                    <li class="item home-link"><a href="index.html">Home</a></li>
-                    <li class="item"><a href="about.html">About</a></li>
+                    <li class="item home-link"><a href="index.html" class="focus">Home</a></li>
+                    <li class="item"><a href="about.html" class="focus">About</a></li>
                 </ul>
             </nav>
             <!--Nested grid content-->
             <main class="nested-grid">
                 <article class="blog-article">
-                    <h1 class="heading">Blog post title</h1>
+                    <h1 class="heading" id="main-content" tabindex="-1">Blog post title</h1>
                     <div class="author-post">
                         <img src="img/avatar.png" alt="Avatar" class="img">
                         <h2 class="author-name">Name of the author</h2>
@@ -40,39 +41,39 @@
                         Mauris aliquet mi nec lorem commodo ullamcorper. Donec hendrerit magna nec mi fringilla rutrum. Integer eleifend sem a nisi varius, non suscipit turpis pulvinar. Sed magna libero, euismod sit amet lacus sit amet, porta convallis augue. Sed eu est rutrum, rutrum turpis ac, porta dui. Maecenas ultrices, dui sit amet euismod dapibus, mauris sem egestas urna, in sagittis libero lacus ut ante. Donec aliquet tortor in interdum sagittis. Mauris sed tincidunt nibh. Praesent eget tortor placerat, commodo nunc semper, rhoncus ipsum. Fusce tincidunt scelerisque ex. Fusce sem neque, pellentesque porttitor dictum nec, suscipit ac augue. Sed placerat nibh eget leo sodales rutrum. Nam ut faucibus elit, nec efficitur diam. Cras consectetur nulla id nisi luctus dapibus. Cras pretium diam sed mollis tempor. Etiam odio enim, ultricies non arcu vel, feugiat finibus est.
                     </p>
                 </article>
-                <aside class="blog-aside">
-                    <h1 class="heading">Recent posts</h1>
+                <div class="blog-aside">
+                    <h1 class="heading" aria-label="Recent posts by month" tabindex="0" aria-label="Recent posts by month">Recent posts</h1>
                     <ul class="month-list">
-                        <li><a class="month" href="#">January</a></li>
-                        <li><a class="month" href="#">February</a></li>
-                        <li><a class="month" href="#">March</a></li>
-                        <li><a class="month" href="#">April</a></li>
-                        <li><a class="month" href="#">May</a></li>
-                        <li><a class="month" href="#">June</a></li>
-                        <li><a class="month" href="#">July</a></li>
-                        <li><a class="month" href="#">August</a></li>
-                        <li><a class="month" href="#">September</a></li>
-                        <li><a class="month" href="#">October</a></li>
-                        <li><a class="month" href="#">November</a></li>
-                        <li><a class="month" href="#">December</a></li>
+                        <li><a class="month focus" href="#" >January</a></li>
+                        <li><a class="month focus" href="#">February</a></li>
+                        <li><a class="month focus" href="#">March</a></li>
+                        <li><a class="month focus" href="#">April</a></li>
+                        <li><a class="month focus" href="#">May</a></li>
+                        <li><a class="month focus" href="#">June</a></li>
+                        <li><a class="month focus" href="#">July</a></li>
+                        <li><a class="month focus" href="#">August</a></li>
+                        <li><a class="month focus" href="#">September</a></li>
+                        <li><a class="month focus" href="#">October</a></li>
+                        <li><a class="month focus" href="#">November</a></li>
+                        <li><a class="month focus" href="#">December</a></li>
                     </ul>
                     <section class="social-media">
-                        <h2 class="little-heading">Follow us</h2>
+                        <h2 class="little-heading" tabindex="0" aria-label="Follow us on social media">Follow us</h2>
                         <ul class="social-list">
-                            <li><a class="social-items" href="https://github.com/">GitHub</a></li>
-                            <li><a class="social-items" href="https://twitter.com/">Twitter</a></li>
-                            <li><a class="social-items" href="https://www.linkedin.com/">Linkedin</a></li>
+                            <li><a class="social-items focus" href="https://github.com/">GitHub</a></li>
+                            <li><a class="social-items focus" href="https://twitter.com/">Twitter</a></li>
+                            <li><a class="social-items focus" href="https://www.linkedin.com/">Linkedin</a></li>
                         </ul>
                     </section>
-                </aside>
+                </div>
             </main>
             <footer>
                 <h1>Contact</h1>
                 <form class="newsletter" method="POST">
-                    <h2>Subscribe to our newsletter</h2>
+                    <h2 aria-owns="label-email text">Subscribe to our newsletter</h2>
                     <label class="label-email" for="text">Enter your email:</label>
-                    <input type="email" id="text" name="E-mail" class="fcs">
-                    <input type="submit" id="send" aria-label="Submit" value="Submit" class="fcs">
+                    <input type="email" id="text" name="E-mail" class="focus">
+                    <input type="submit" id="send" aria-label="Submit" value="Submit" class="focus">
                 </form>
             </footer>
         </div>

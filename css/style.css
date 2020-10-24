@@ -1,5 +1,6 @@
 /* Importing responsive layouts */
-@import "./phone.css" (max-width: 599px);
+@import "./small_phone.css" (max-width: 320px);
+@import "./phone.css" (min-width: 321px) and (max-width: 599px);
 @import "./tablet.css" (min-width: 600px) and (max-width: 900px);
 @import "./desktop.css" (min-width: 901px);
 
@@ -16,7 +17,26 @@ body {
   margin: 0px;
 }
 
-nav {
+.focus:focus {
+  background: #ff6666;
+  text-decoration: underline;
+}
+
+.skip-link {
+  top: -50px;
+  position: absolute;
+  background-color: #ff0000;
+  left: 0px;
+  color: #ffffff;
+  padding: 8px;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+.nav-top {
   background: #11161a;
   padding: 0 15px;
   grid-area: hd;
@@ -82,7 +102,7 @@ article > a {
 }
 
 .post-title {
-  color: #657482;
+  color: #34383c;
 }
 
 .blog-txt {

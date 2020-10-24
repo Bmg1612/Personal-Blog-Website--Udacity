@@ -8,16 +8,17 @@
         <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="grid-container">
-            <nav>
+        <a href="#main-content" class="skip-link">Skip to main content</a>
+        <div class="grid-container-about">
+            <nav class="nav-top">
                 <ul class="menu">
                     <li class="logo">Blog Template</li>
-                    <li class="item home-link"><a href="index.html">Home</a></li>
-                    <li class="item"><a href="about.html">About</a></li>
+                    <li class="item home-link"><a href="index.html" class="focus">Home</a></li>
+                    <li class="item"><a href="about.html" class="focus">About</a></li>
                 </ul>
             </nav>
             <main class="about-main">
-                <h1 class="hdn-center">README</h1>
+                <h1 class="hdn-center" id="main-content" tabindex="-1">README</h1>
                 <h2>Personal Blog Website - Udacity</h2>
                 <p>Project of the Nanodegree Course 'Front End Web Development'.</p>
                 <h3 class="hdn-center">Details</h3>
@@ -36,18 +37,18 @@
                 <p>I have not used JS in this website because of the purpose of the project</p>   
                 <h4 class="hdn-center"> Responsiveness</h4>
                 <!--CHANGE COLOR OF LINKS-->
-                <p>I used the viewport meta tag - <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag" class="about-link">More information here</a></p>
-                <p>Aaand the @media queries - <a href="https://www.w3schools.com/css/css_rwd_mediaqueries.aspg" class="about-link">More information here</a></p>
+                <p>I used the viewport meta tag - <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag" class="about-link" aria-label="More information about viewport meta tag">More information here</a></p>
+                <p>Aaand the @media queries - <a href="https://www.w3schools.com/css/css_rwd_mediaqueries.aspg" class="about-link" aria-label="More information about media queries">More information here</a></p>
                 <h3 class="hdn-center">Contribution</h3>
                 <p>Since I am learning Front end Web Development, any tips or suggestions are greatly appreciated.</p>
             </main>
             <footer>
                 <h1>Contact</h1>
                 <form class="newsletter" method="POST">
-                    <h2>Subscribe to our newsletter</h2>
+                    <h2 aria-owns="label-email text">Subscribe to our newsletter</h2>
                     <label class="label-email" for="text">Enter your email:</label>
-                    <input type="email" id="text" name="E-mail" class="fcs">
-                    <input type="submit" id="send" aria-label="Submit" value="Submit" class="fcs">
+                    <input type="email" id="text" name="E-mail" class="focus">
+                    <input type="submit" id="send" aria-label="Submit" value="Submit" class="focus">
                 </form>
             </footer>
         </div>

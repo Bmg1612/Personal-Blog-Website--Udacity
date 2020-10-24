@@ -7,7 +7,7 @@
     grid-auto-rows: min-content;
     grid-template-areas:
       "hd hd hd"
-      "article article article"
+      "feat feat feat"
       "main main main"
       "ft ft ft";
   }
@@ -34,7 +34,7 @@
   }
 
   .featured-post {
-    grid-area: article;
+    grid-area: feat;
     padding: 0 20px;
     border-bottom: 2px dotted #ffffff;
     font-size: 2.5rem;
@@ -65,12 +65,22 @@
     gap: 20px;
     align-items: center;
     justify-content: space-between;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 30px 20px;
   }
 
   .article-card {
     width: 30%;
+  }
+
+  /* About page */
+  .grid-container-about {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: min-content;
+    grid-template-areas:
+      "hd"
+      "main"
+      "ft";
   }
 
   /* Blog post page */
@@ -89,6 +99,7 @@
   }
 
   .nested-grid {
+    grid-area: main;
     display: grid;
     grid-template-columns: 75% 25%;
     grid-template-rows: min-content;
