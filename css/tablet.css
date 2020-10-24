@@ -11,6 +11,7 @@
       "main main"
       "ft ft";
   }
+
   .menu {
     list-style-type: none;
     display: flex;
@@ -86,6 +87,7 @@
       "ft";
     gap: 20px;
   }
+
   .nested-grid {
     display: grid;
     grid-template-columns: 1fr;

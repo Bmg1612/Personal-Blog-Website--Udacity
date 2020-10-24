@@ -106,12 +106,14 @@
     grid-template-areas: "article aside";
     gap: 5px;
     color: #ffffff;
+    margin: 0 15px;
   }
 
   .blog-article {
     grid-area: article;
     height: 100%;
     width: 100%;
+    text-align: justify;
   }
 
   .blog-aside {

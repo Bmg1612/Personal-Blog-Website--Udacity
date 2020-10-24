@@ -42,7 +42,7 @@ body {
   grid-area: hd;
 }
 
-nav > ul > li > a {
+.link-nav {
   color: #ffffff;
   text-decoration: none;
   letter-spacing: 2px;
@@ -51,7 +51,7 @@ nav > ul > li > a {
   padding: 15px 5px;
 }
 
-nav > ul > li > a:hover {
+.link-nav:hover {
   color: #ccc;
 }
 
@@ -67,7 +67,7 @@ nav > ul > li > a:hover {
   padding: 0px 10px;
 }
 
-footer {
+.footer {
   grid-area: ft;
   background-color: #2e3d49;
   text-align: center;
@@ -75,7 +75,7 @@ footer {
   letter-spacing: 2px;
 }
 
-footer > h2 {
+.subscribe-ft {
   text-align: center;
 }
 
@@ -97,7 +97,7 @@ footer > h2 {
   border-radius: 25px;
 }
 
-article > a {
+.article-link {
   text-decoration: none;
 }
 
@@ -169,6 +169,10 @@ article > a {
   padding: 0px;
   padding-bottom: 10px;
   color: #b4b9bd;
+}
+
+.rel-post-link {
+  color: #ffffff;
 }
 
 .social-media {
