@@ -1,5 +1,6 @@
 /* Tablet layout */
 @media (min-width: 600px) and (max-width: 900px) {
+  /* Home page */
   .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

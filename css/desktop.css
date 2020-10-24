@@ -1,5 +1,6 @@
 /* Desktop layout */
 @media (min-width: 901px) {
+  /* Home page */
   .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -45,6 +46,8 @@
   .article-card {
     width: 30%;
   }
+
+  /* Blog post page */
   .grid-container-post {
     display: grid;
     width: 100%;
