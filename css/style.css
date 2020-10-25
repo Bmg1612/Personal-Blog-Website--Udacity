@@ -49,6 +49,7 @@ body {
   width: 100%;
   display: block;
   padding: 15px 5px;
+  font-weight: bold;
 }
 
 .link-nav:hover {
@@ -84,6 +85,11 @@ body {
 }
 
 /* Home page */
+figcaption {
+  font-size: 1rem;
+  float: right;
+}
+
 .article-card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 25px;
@@ -119,6 +125,8 @@ body {
 
 .hdn-center {
   color: #ffffff;
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 .about-ls {
@@ -135,6 +143,7 @@ body {
   font-size: 3rem;
   text-decoration: underline;
   color: #dcbff3;
+  font-weight: bold;
 }
 
 .month-list {
@@ -158,7 +167,7 @@ body {
   padding: 0px;
 }
 
-.author-name {
+.author-info {
   margin: 0px;
   padding: 0px;
   color: #b4b9bd;
@@ -183,6 +192,8 @@ body {
 .little-heading {
   text-align: center;
   color: #dcbff3;
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 .social-list {
