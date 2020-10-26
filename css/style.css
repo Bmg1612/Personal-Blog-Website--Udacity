@@ -96,6 +96,7 @@ figcaption {
   transition: 0.3s;
   background-color: #c8cdd2;
   text-align: center;
+  margin: 20px 0;
 }
 
 .blog-img {
