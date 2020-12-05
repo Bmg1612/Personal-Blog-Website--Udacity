@@ -22,3 +22,7 @@ Aaand the `@media` queries - [More information here](https://www.w3schools.com/c
 
 ## Contribution
 Since I am learning Front end Web Development, any tips or suggestions are greatly appreciated.
+
+## License
+[MIT License](https://opensource.org/licenses/MIT).
+
