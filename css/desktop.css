@@ -2,6 +2,7 @@
 @media (min-width: 901px) {
   /* Home page */
   .grid-container {
+    box-sizing: border-box;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: min-content;
@@ -13,6 +14,7 @@
   }
 
   .menu {
+    box-sizing: border-box;
     list-style-type: none;
     display: flex;
     flex-direction: row;
@@ -24,7 +26,6 @@
   }
 
   .item {
-    position: relative;
     display: block;
     width: auto;
   }
