@@ -70,6 +70,11 @@ body {
   padding: 0px 10px;
 }
 
+.featured-post {
+  background-image: url("../img/feat-post-img.png");
+  background-size: contain;
+}
+
 .footer {
   grid-area: ft;
   background-color: #2e3d49;

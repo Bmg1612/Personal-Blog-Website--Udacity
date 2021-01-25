@@ -13,25 +13,29 @@
       "ft ft ft";
   }
 
+  .nav-top {
+    padding: 0px;
+  }
+
   .menu {
-    box-sizing: border-box;
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
     justify-content: space-between;
     flex-wrap: nowrap;
     padding: 10px;
     width: 100%;
+    box-sizing: border-box;
+  }
+
+  .link-nav {
+    padding: 0px;
+    display: inline-block;
+    font-size: 1.5rem;
   }
 
   .item {
-    display: block;
-    width: auto;
-  }
-
-  .home-link {
-    right: 5%;
+    padding: 0px;
   }
 
   .featured-post {
@@ -39,8 +43,6 @@
     padding: 0 20px;
     border-bottom: 2px dotted #ffffff;
     font-size: 2.5rem;
-    background-image: url("../img/feat-post-img.png");
-    background-size: contain;
   }
 
   .feat-post-link {
